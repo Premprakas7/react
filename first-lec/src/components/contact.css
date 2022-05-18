@@ -1,0 +1,12 @@
+.container{
+
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+.container>div{
+    margin-left: 1rem;
+    
+}
+.icon{
+    width: 10rem;
+}
