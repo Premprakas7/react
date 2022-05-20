@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { Github } from './components/Github'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState("Prem");
+  const [text, setTex]=useState("");
 
   return (
     <div className="App">
-     <Github/>
+      
     </div>
   )
 }
