@@ -3,12 +3,11 @@ import logo from './logo.svg'
 import './App.css'
 
 function App() {
-  const [user, setUser] = useState("Prem");
-  const [text, setTex]=useState("");
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      
+     
     </div>
   )
 }
