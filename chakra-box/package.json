@@ -1,5 +1,5 @@
 {
-  "name": "product-routing",
+  "name": "chakra-box",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -10,7 +10,10 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "@chakra-ui/react": "2.1.0",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "framer-motion": "6.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
