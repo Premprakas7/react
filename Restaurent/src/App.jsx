@@ -44,7 +44,7 @@ function App() {
     console.log(paramsForPayment)
     axios({
       method: 'get',
-      url: "http://localhost:3000/food",
+      url: "http://localhost:8080/food",
       params: {
         _page: page,
         _limit: 5,

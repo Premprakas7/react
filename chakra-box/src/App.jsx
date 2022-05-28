@@ -14,7 +14,12 @@ function App() {
       <Center h='200px' flex='1' bg="red">WIDGET</Center>
     </Flex>
     <Flex>
+      <Flex><Center w='100%' bg='red'>1</Center></Flex>
       
+        <Center>2</Center>
+        <Center>3</Center>
+      
+
     </Flex>
  
     </div>

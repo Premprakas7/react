@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+.detail{
+    width: 20rem;
+    border: 2px solid maroon;
+    padding: 2pc 2pc 2pc 2pc;
+    font-size: 20px;
+    font-style: italic;
+}
