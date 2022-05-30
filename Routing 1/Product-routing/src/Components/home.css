@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    margin-left: 45%;
+
+}
+.nav>link{
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    border: 2px solid maroon;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 10rem;
+    height: 10em;
+}
