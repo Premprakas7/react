@@ -4,6 +4,7 @@ import Products from './Products'
 import {Routes, Route,Link} from "react-router-dom"
 import "./home.css"
 import Details from './Details'
+import Error404 from './Error404'
 
 const Navbar=()=>{
     return(<div className='nav'>
@@ -19,10 +20,11 @@ const AllRoute = () => {
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}>
-        
         </Route>
         <Route path='/products/:id' element={<Details/>}/>
-      </Routes>
+        <Route path='*' element={<Error404/>}/>
+       </Routes>
+
       
     </div>
   )
