@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-
 import AllRoute from './Components/AllRoute'
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <AllRoute/>
-      
     </div>
   )
 }
