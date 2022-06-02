@@ -1,0 +1,10 @@
+.pumalogo{
+    width: 5rem;
+    height: 5em;
+}
+.nav{
+    background-color: black;
+}
+.nav>:link{
+    margin-left: 10px;
+}
