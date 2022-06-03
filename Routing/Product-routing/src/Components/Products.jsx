@@ -8,7 +8,7 @@ const Products = () => {
   const [loading, setLoading]=useState(true);
   useEffect(()=>{
     axios({
-      url:"http://localhost:8080/products",
+      url:import.meta.env.VITE_RES_API,
       method:"GET"
     }).then(res=>{
       setData(res.data);
