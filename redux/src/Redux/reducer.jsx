@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { appActions } from './action'
 
 export const reducer = (state, action) => {
@@ -7,12 +6,12 @@ export const reducer = (state, action) => {
       case appActions.INCREMENT_COUNTER:
       return{
           ...state,
-          count: state.count+1
+          count: state.count+ action.payload
       };
       case appActions.DECREMENT_COUNTER:
       return {
           ...state,
-          count: state.count-1
+          count: state.count- action.payload
       }
       default:
           return state;

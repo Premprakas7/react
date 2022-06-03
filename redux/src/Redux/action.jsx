@@ -4,9 +4,10 @@ export const appActions={
     DECREMENT_COUNTER:"DECREMENT_COUNTER"
 }
 
-export const incrementCountAction =()=>{
+export const incrementCountAction =(count)=>{
     return{
         type :appActions.INCREMENT_COUNTER,
         payload: count
+    
     }
 }
