@@ -14,6 +14,6 @@ export const getTodoSuccess=(data)=>({
     payload:data
 });
 
-export const getTodoFailure=()=>{
+export const getTodoFailure=()=>({
     type:todosActions.GET_TODOS_FAILURE
-}
+})

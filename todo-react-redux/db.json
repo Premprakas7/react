@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "title": "Drink Water Daily",
+      "status": false,
+      "desc": "Drainking 4-5 ltr of water daily imporve health immunity power.",
+      "id": 1
+    },
+    {
+      "title": "learing React",
+      "status": true,
+      "desc": "Learning react good for placement preparation process.",
+      "id": 2
+    },
+    {
+      "title": "Help People",
+      "status": true,
+      "desc": "help people everywhere,God will help you",
+      "id": 3
+    },
+    {
+      "title": "Smoking",
+      "status": false,
+      "desc": "Not good for health",
+      "id": 4
+    },
+    {
+      "title": "learn Todo",
+      "desc": "learning todo confidenet aboute redux and react also",
+      "id": 5
+    },
+    {
+      "title": "Nervous everywhere",
+      "desc": "Not good for health",
+      "status": false,
+      "id": 6
+    }
+  ]
+}
