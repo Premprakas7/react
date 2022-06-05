@@ -34,6 +34,21 @@
       "desc": "Not good for health",
       "status": false,
       "id": 6
+    },
+    {
+      "title": "Learn react",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "LEARN REDUX",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "STOP DRINKING ",
+      "status": false,
+      "id": 9
     }
   ]
 }
