@@ -8,8 +8,6 @@ import "./dashboard.css"
 export const Dashboard = ()=>{
 
     let [search , setsearch ] = useState("")
-
- 
     let [page , setpage] = useState(6)
     let [alldata , setdata ] = useState([])
 
