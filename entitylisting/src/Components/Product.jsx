@@ -30,12 +30,10 @@ const product=useSelector(state=>state.ecommData.data);
 
     
   </Box>
-  <Box>
- 
-  </Box>
-
+  
+ <Flex flexWrap='wrap' justifyContent='space-around' padding='1rem'>
     {product?.map((item)=>(
-       <Flex py={12}>
+       <Center py={12} key={item.id}>
        <Box
          role={'group'}
          p={6}
@@ -73,7 +71,7 @@ const product=useSelector(state=>state.ecommData.data);
              rounded={'lg'}
              height={230}
              width={282}
-             objectFit={'cover'}
+             objectFit={'fit'}
              src={item.image}
            />
          </Box>
@@ -94,7 +92,8 @@ const product=useSelector(state=>state.ecommData.data);
            </Stack>
          </Stack>
        </Box>
-     </Flex>
+     </Center>
+     
 
   //   <Flex border='1px solid red' key={item.id}>
   // <Box><Image boxSize='150px' src={item.image} alt='product'/> </Box>
@@ -105,6 +104,7 @@ const product=useSelector(state=>state.ecommData.data);
   //     </Box>
   //   </Flex>
     ))}
+    </Flex>
     <Box>
       <Button  bg='gray.900' color='white' >PREV</Button>
       <Button  bg='gray.900' color='white'>NEXT</Button>
