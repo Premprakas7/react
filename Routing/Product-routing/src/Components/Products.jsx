@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Products = () => {
   const [data, setData]=useState([]);
   const [loading, setLoading]=useState(true);
+  
   useEffect(()=>{
     axios({
       url:import.meta.env.VITE_RES_API,

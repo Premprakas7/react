@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.post-item{
+  width: 700px;
+  margin: auto;
+}
+.btn{
+  padding: 5px 14px;
+  margin: 6px;
+}
