@@ -4,12 +4,13 @@ import { Navbar } from './AllRoute'
 import { Select } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getData } from './Redux/action'
+import Filter from './Filter'
+
 
 
 const Product = () => {
   const dispatch=useDispatch();
 const product=useSelector(state=>state.ecommData.data);
-
     useEffect(()=>{
       dispatch(getData())  
       },[])
@@ -21,13 +22,8 @@ const product=useSelector(state=>state.ecommData.data);
   <option value='High'>High to Low</option>
   <option value='Low'>Low to High</option>
 </Select>
-<Box>Filter 
-  <Button bg='#e0e1dd'>Mens</Button>
-  <Button bg='#e0e1dd'>Women</Button>
-  <Button bg='#e0e1dd'>Jewellery</Button>
-  <Button bg='#e0e1dd'>Electronics</Button>
-</Box>
 
+<Filter/>
     
   </Box>
   
@@ -40,7 +36,7 @@ const product=useSelector(state=>state.ecommData.data);
          key={item.id}
          maxW={'330px'}
          w={'full'}
-         bg={('white', 'gray.800')}
+         bg={('white', '#')}
          boxShadow={'2xl'}
          rounded={'lg'}
          pos={'relative'}
@@ -76,19 +72,17 @@ const product=useSelector(state=>state.ecommData.data);
            />
          </Box>
          <Stack pt={10} align={'center'}>
-           <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-             Brand
+           <Text  fontSize={'sm'} textTransform={'uppercase'}>
+             {item.category}
            </Text>
            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-             Nice Chair, pink
+             {item.title}
            </Heading>
            <Stack direction={'row'} align={'center'}>
              <Text fontWeight={800} fontSize={'xl'}>
-               $57
+             ₹{item.price}
              </Text>
-             <Text textDecoration={'line-through'} color={'gray.600'}>
-               $199
-             </Text>
+            
            </Stack>
          </Stack>
        </Box>
