@@ -72,6 +72,26 @@ switch(action.type){
             loading:false
         } 
     }
+    case actionTypes.FETCH_CART_REQUEST:{
+        return{
+           ...state,
+           loading:true
+        } 
+    }
+    case actionTypes.FETCH_CART_SUCCESS:{
+        return{
+            ...state,
+        carts:[action.payload],
+        loading:false
+        } 
+    }
+    case actionTypes.FETCH_CART_FAILURE:{
+        return{
+            ...state,
+            error:true,
+            loading:false
+        } 
+    }
     default:{
         return state
     }

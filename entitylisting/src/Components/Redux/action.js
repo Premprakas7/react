@@ -130,3 +130,18 @@ export const fetchCartFailure=()=>{
         type:actionTypes.FETCH_CART_FAILURE
     }
 }
+
+export const fetchCart=(data)=>(dispatch,getState)=>{
+dispatch(fetchCartRequest);
+axios({
+    url:"http://localhost:8080/carts",
+    method:"GET",
+})
+.then((res)=>{
+    dispatch(fetchCartSuccess(res.data))
+    console.log(res.data)
+})
+.catch((err)=>{
+    dispatch(fetchCartFailure())
+})
+}

@@ -13,14 +13,17 @@ const Product = () => {
 const product=useSelector(state=>state.ecommData.data);
     useEffect(()=>{
       dispatch(getData())  
-      },[])
+      },[]);
+
+ 
+
   return (
     <div>
     <Navbar/>
   <Box>
   <Select  placeholder='Price Sort'>
-  <option value='High'>High to Low</option>
-  <option value='Low'>Low to High</option>
+  <option  value='High'>High to Low</option>
+  <option  value='Low'>Low to High</option>
 </Select>
 
 <Filter/>

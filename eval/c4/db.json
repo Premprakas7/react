@@ -1,0 +1,38 @@
+{
+  "company": [
+    {
+      "id": 1,
+      "title": "SOFTAWRE"
+    },
+    {
+      "title": "DELL",
+      "status": false,
+      "id": 2
+    }
+  ],
+  "employee": [
+    {
+      "title": "LINKDSIN",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "PP",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "NAME",
+      "status": false,
+      "id": 3
+    },
+    {
+      "name": "PREM",
+      "company": "MASAI SCHOOL",
+      "email": "PP@gmail.com",
+      "phone": "80000700",
+      "salary": "10k",
+      "id": 4
+    }
+  ]
+}
