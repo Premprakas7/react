@@ -33,11 +33,11 @@ const AllRoute = () => {
   return (
     <div>
         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/products' element={<Product/>}/>
-            <Route path='/products/:id' element={<SingleProduct/>}/>
-            <Route path='/carts' element={<Cart/>}/>
-            <Route path='/login' element={<Login/>}/>
+            <Route path='/' element={<Home />}/>
+            <Route  path='/products' element={<Product />}/>
+            <Route path='/products/:id' element={<SingleProduct />}/>
+            <Route path='/carts' element={<Cart />}/>
+            <Route path='/login' element={<Login />}/>
         </Routes>
       
     </div>
